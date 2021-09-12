@@ -1,5 +1,5 @@
 import { createContext, useContext } from "react";
-import { MenuContextType, MenuModel } from "../models/menuModels";
+import { MenuContextType, MenuModel } from "../models/MenuModels";
 
 export const MenuContext = createContext<MenuContextType>({
   menu: {
