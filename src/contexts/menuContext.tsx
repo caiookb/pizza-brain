@@ -3,10 +3,13 @@ import { MenuContextType, MenuModel } from "../models/MenuModels";
 
 export const MenuContext = createContext<MenuContextType>({
   menu: {
-    flavor: [],
-    dough: [],
-    size: [],
-    isLoading: false,
+    pizzas: [
+      {
+        flavor: "",
+        price: 0,
+        image: undefined,
+      },
+    ],
   },
   setMenu: (menu: MenuModel) => menu,
 });

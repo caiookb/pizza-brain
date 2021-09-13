@@ -9,6 +9,7 @@ export const CartContext = createContext<CartContextType>({
     size: "",
     full_name: "",
     address: "",
+    price: 0,
   },
   setCart: (cart: CartModel) => cart,
 });
